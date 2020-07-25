@@ -35,7 +35,7 @@ end
 def info_total_price(chosen_item, num_of_items)
   total_price = chosen_item[:price] * num_of_items
   if num_of_items >= 5
-    discount_total_price = total_price * 0.9
+    discount_total_price = total_price * 0.8
     puts "5個以上なので20%割引となります"
     puts "合計料金：¥#{discount_total_price.floor}"
   else
