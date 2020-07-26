@@ -1,16 +1,3 @@
-# ①商品を表示する：disp_info(groceries)
-# ②商品を選択する：choose_item(groceries)
-# ③個数を入力する：decide_howmany_items(chosen_item)
-# ④合計金額を計算する：info_total_price(chosen_item, num_of_items)
-
-groceries = [
-    { name: "トマト", price: 100},
-    { name: "にんじん", price: 200},
-    { name: "かぼちゃ", price: 300},
-    { name: "スイカ", price: 1000},
-  ]
-
-
 def disp_info(groceries)
 
   puts "商品を選択してください"
@@ -53,9 +40,3 @@ def info_total_price(chosen_item, num_of_items)
     puts "合計料金：¥#{total_price}"
   end
 end
-
-
-disp_info(groceries)
-chosen_item = choose_item(groceries)
-num_of_items = decide_howmany_items(chosen_item)
-info_total_price(chosen_item, num_of_items)
